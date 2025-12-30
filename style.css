@@ -149,9 +149,7 @@ li{
 
   /* LOGO */
   .logo {
-    background-image: none;      /* remove a imagem */
-    background-color: #F55257;   /* cor fixa (pode trocar) */
-    height: 180px;               /* altura menor no celular */
+    display: none;
   }
 
   /* TEXTO */
@@ -195,6 +193,7 @@ li{
   }
 
 }
+
 
 
 
