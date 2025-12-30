@@ -160,9 +160,10 @@ li{
 }
 
 .final{
-    background-color: #F55257;
-    width: 100%;
-    height: 500px;
+  background-color: #F55257;
+  width: 100%;
+  padding: 30px 15px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -209,6 +210,7 @@ li{
   }
 
 }
+
 
 
 
