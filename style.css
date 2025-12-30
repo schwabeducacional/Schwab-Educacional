@@ -105,21 +105,6 @@ li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .bloco {
-    flex-direction: column;     /* muda para vertical em telas pequenas */
-  }
-
-  .imagem, .texto {
-    flex: unset;                /* remove o comportamento flex */
-    width: 100%;                /* cada div ocupa 100% da largura */
-  }
-
-  .imagem img {
-    height: 300px;              /* altura fixa para mobile */
-  }
-}
-
 .plataforma {
   text-align: center;        /* centraliza o título */
   padding: 50px 20px;        /* espaço acima e abaixo da seção */
@@ -159,5 +144,6 @@ li{
     width: 100%;
     height: 100px;
 }
+
 
 
