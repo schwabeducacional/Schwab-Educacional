@@ -145,5 +145,57 @@ li{
     height: 100px;
 }
 
+@media (max-width: 768px) {
+
+  /* LOGO */
+  .logo {
+    height: 250px;
+    background-position-y: center;
+    background-attachment: scroll;
+  }
+
+  /* TEXTO */
+  p {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  /* BLOCO PRETO */
+  .bloco {
+    flex-direction: column;
+  }
+
+  .texto {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .imagem img {
+    height: auto;
+  }
+
+  /* BOTÃO */
+  .link {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+}
+
+
+
 
 
