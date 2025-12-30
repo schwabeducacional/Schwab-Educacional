@@ -1,63 +1,63 @@
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
+html, body { /* Seleciona as tags <html> e <body>, fazendo as regras a seguir valerem para toda a página */
+  overflow-x: hidden; /* Esconde tudo que ultrapassa a largura da tela no eixo X, impedindo a barra de rolagem lateral */
+  max-width: 100%; /* Define que o site ocupará 100% da largura da tela */
 }
 
-*{
-    margin: 0;
+*{/* Seletor universal, abrange tudo, h1, p, div */
+    margin: 0; /* Define a margem padrão do site como 0 */
 }
 
-.logo{
-    width: 100%;
-    height: 500px;
-    background-image: url(Schwab\ Educacional.jpg);
-    background-size: cover;
-    background-position: center;
-    background-position-y: -200px;
-    background-attachment: fixed;
+.logo{ /* Classe para a logo inicial do site */
+    width: 100%;/* Vai ocupar 100% da largura da tela */
+    height: 60vh; /* 60% da altura da tela do usuário */
+    min-height: 300px; /* Tamanho mínimo da logo, caso o vh calcule um valor menor que esse, é sempre setado pra 300 */
+    background-image: url("Schwab Educacional.jpg"); /* Seleciona a imagem do background */
+    background-size: cover; /* Background cobre toda a div */
+    background-position: center; /* Imagem do background se alinha pelo centro */
+    background-repeat: no-repeat; /* Garante que a imagem não fique se repetindo na div */
 }
 
-.grande{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.grande{  /* Classe para o texto chamativo inicial */
+    margin-top: 50px; /* Margem de 50 pixels do que estiver acima dele */
+    margin-bottom: 50px; /* Margem de 50 pixels do que estiver abaixo dele */
+    text-align: center; /* Texto se alinha no centro da tela */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Seleciona as fontes do texto */
 }
 
-h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2{ /* Tag para textos do tamanho h2 */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Seleciona as fontes do texto */
 }
 
-p{
-    margin-top: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px; /* espaço entre as letras */
-    line-height: 1.6;    /* altura da linha para melhor leitura */
+p{ /* Tag para textos do tamanho de um parágrafo */
+    margin-top: 20px; /* Margem de 20 pixels do que estiver acima dele */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Seleciona as fontes do texto */
+    letter-spacing: 2px; /* Espaço entre as letras */
+    line-height: 1.6;    /* Espaçamento entre as linhas */
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 800px;   /* opcional, controla tamanho no desktop */
-  padding-top: 56.25%; /* proporção 16:9 */
+.video-wrapper { /* Classe criada para o vídeo do YT */
+  position: relative; /* Ponto de referência para o vídeo IFRAME */
+  width: 100%; /* Ocupa toda a largura da tela */
+  max-width: 800px;   /* Tamanho máximo de largura = 800px */
+  padding-top: 56.25%; /* Mantém a proporção 16:9, onde a altura é 56.25% do comprimento */
 }
 
-.video-wrapper iframe {
-  position: absolute;
+.video-wrapper iframe { /* Pega um IFRAME que está dentro da classe video-wrapper */
+  position: absolute; /* Mantém uma posição fixa em relação a posição do vídeo-wrapper */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; /* Ocupa todo o tamanho da div */
   height: 100%;
 }
 
-.video {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.video { 
+  width: 100%; /* Ocupa a máxima largura da classe */
+  max-width: 800px; /* Limita o tamanho da div */
+  margin: 0 auto; /* Alinha a div no centro */
+  text-align: center; /* Alinha o link no centro */
 }
 
-.whatsapp-btn {
+.whatsapp-btn { /* Classe para o botão do Whatsapp */
     position: fixed;      /* Fica fixo na tela */
     bottom: 20px;         /* Distância da parte inferior */
     right: 20px;          /* Distância da lateral direita */
@@ -66,56 +66,54 @@ p{
     height: 60px;
 }
 
-.whatsapp-btn img {
+.whatsapp-btn img { /* Pega a imagem do botão do Whatsapp que está dentro da classe */
     width: 100%;
     height: 100%;
     border-radius: 50%;   /* Deixa redondo */
     box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Pequena sombra */
-    transition: transform 0.2s;
 }
 
-.link{
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block;
-    background-color: #F55257;
-    padding: 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    margin-top: 50px;
-    text-align: center;
+.link{ /* Definições para os links */
+    font-weight: bold; /* Fonte mais grossa */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Fontes dos links */
+    display: inline-block; /* Permite transformar o link em um botão */
+    background-color: #F55257; /* Cor do fundo */
+    padding: 15px; /* Margem interna de 15px */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Tira a decoração padrão do link */
+    color: white; /* Cor branca para o texto */
+    margin-top: 50px; /* Margem no topo */
+    text-align: center; /* Alinha o texto no centro do link */
 }
 
-.link:active{
-    color:white;
-    background-color: black;
+.link:active{ /* Quando clicar no link */
+    background-color: black; /* Fundo fica preto */
 }
 
-.bloco {
-  display: flex;              /* ativa Flexbox */
-  width: 100%;
-  max-width: 1000px;          /* opcional, deixa o bloco com largura controlada */
-  margin: 50px auto;          /* centraliza o bloco na página */
-  background-color: black;  /* cor de fundo do bloco */
-  border-radius: 10px;        /* cantos arredondados */
-  overflow: hidden;           /* corta excesso de imagem */
+.bloco { /* Bloco texto/imagem */
+  display: flex;              /* Ativa o sistema para organizar elementos na tela de forma simples */
+  width: 100%;                /* Ocupa toda a largura */
+  max-width: 1000px;          /* Deixa o bloco com largura controlada */
+  margin: 50px auto;          /* Centraliza o bloco na página */
+  background-color: black;  /* Cor de fundo do bloco */
+  border-radius: 10px;        /* Cantos arredondados */
+  overflow: hidden;           /* Corta excesso de imagem */
 }
 
 .texto {
     color: white;
-  flex: 1;                    /* ocupa metade do espaço */
+  flex: 1;                    /* Ocupa metade do espaço */
   padding: 40px;
 }
 
 .imagem {
-  flex: 1;                    /* ocupa metade do espaço */
+  flex: 1;                    /* Ocupa metade do espaço */
 }
 
 .imagem img {
-  width: 100%;                /* ocupa toda a coluna */
-  height: 100%;               /* mantém altura do bloco */
-  object-fit: cover;          /* ajusta a imagem sem distorcer */
+  width: 100%;                /* Ocupa toda a coluna */
+  height: 100%;               /* Mantém altura do bloco */
+  object-fit: cover;          /* Preenche o container mantendo a proporção */
 }
 
 li{
@@ -126,37 +124,37 @@ li{
 }
 
 .plataforma {
-  text-align: center;        /* centraliza o título */
-  padding: 50px 20px;        /* espaço acima e abaixo da seção */
+  text-align: center;        /* Centraliza o título */
+  padding: 50px 20px;        /* Espaço acima e abaixo da seção */
 }
 
 .plataforma h2 {
-  margin-bottom: 40px;       /* espaço entre título e imagens */
-  font-size: 2em;             /* tamanho do título */
+  margin-bottom: 40px;       /* Espaço entre título e imagens */
+  font-size: 2em;             /* Tamanho do título */
 }
 
 .cards {
-  display: flex;              /* organiza os cards lado a lado */
-  justify-content: center;    /* centraliza horizontalmente */
-  gap: 40px;                  /* espaço entre os cards */
-  flex-wrap: wrap;            /* permite quebrar em telas pequenas */
+  display: flex;              /* Organiza os cards lado a lado */
+  justify-content: center;    /* Centraliza horizontalmente */
+  gap: 40px;                  /* Espaço entre os cards */
+  flex-wrap: wrap;            /* Permite quebrar em telas pequenas */
 }
 
 .card {
-  text-align: center;         /* centraliza imagem e texto do card */
-  max-width: 200px;           /* largura máxima de cada card */
+  text-align: center;         /* Centraliza imagem e texto do card */
+  max-width: 200px;           /* Largura máxima de cada card */
 }
 
 .card img {
-  width: 100%;                /* imagem ocupa toda a largura do card */
-  height: auto;               /* mantém proporção da imagem */
-  border-radius: 10px;        /* cantos arredondados */
-  margin-bottom: 10px;        /* espaço entre imagem e texto */
+  width: 100%;                /* Imagem ocupa toda a largura do card */
+  height: auto;               /* Mantém proporção da imagem */
+  border-radius: 10px;        /* Cantos arredondados */
+  margin-bottom: 10px;        /* Espaço entre imagem e texto */
 }
 
 .card p {
-  font-size: 1em;             /* tamanho do texto do card */
-  line-height: 1.4;           /* altura da linha */
+  font-size: 1em;             /* Tamanho do texto do card */
+  line-height: 1.4;           /* Altura da linha */
 }
 
 .final{
@@ -166,10 +164,9 @@ li{
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Se o comprimento máximo for o do celular */
   .logo{
-    background-image: none;
-    background-color: #F55257;
+    display: none; /* Logo some */
   }
 
   /* TEXTO */
@@ -189,7 +186,7 @@ li{
   }
 
   .imagem img {
-    height: auto;       /* MUITO IMPORTANTE */
+    height: auto;       
     object-fit: contain;
   }
 
