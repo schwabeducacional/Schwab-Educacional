@@ -149,9 +149,9 @@ li{
 
   /* LOGO */
   .logo {
-    height: 250px;
-    background-position-y: center;
-    background-attachment: scroll;
+    background-image: none;      /* remove a imagem */
+    background-color: #F55257;   /* cor fixa (pode trocar) */
+    height: 180px;               /* altura menor no celular */
   }
 
   /* TEXTO */
@@ -170,13 +170,14 @@ li{
     flex-direction: column;
   }
 
+  .imagem img {
+    height: auto;       /* MUITO IMPORTANTE */
+    object-fit: contain;
+  }
+
   .texto {
     padding: 20px;
     text-align: center;
-  }
-
-  .imagem img {
-    height: auto;
   }
 
   /* BOTÃO */
@@ -194,6 +195,7 @@ li{
   }
 
 }
+
 
 
 
