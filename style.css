@@ -162,14 +162,14 @@ li{
 .final{
     background-color: #F55257;
     width: 100%;
-    height: 100px;
+    height: 200px;
 }
 
 @media (max-width: 768px) {
 
   /* LOGO */
   .logo {
-    display: none;
+    background-attachment: scroll !important;
   }
 
   /* TEXTO */
@@ -213,6 +213,7 @@ li{
   }
 
 }
+
 
 
 
