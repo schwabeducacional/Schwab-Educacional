@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+
+.logo{
+    width: 100%;
+    height: 500px;
+    background-image: url(Schwab\ Educacional.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -200px;
+    background-attachment: fixed;
+}
+
+.grande{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px; /* espaço entre as letras */
+    line-height: 1.6;    /* altura da linha para melhor leitura */
+}
+
+.video {
+  display: flex;
+  flex-direction: column; /* empilha os itens verticalmente */
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+
+.whatsapp-btn {
+    position: fixed;      /* Fica fixo na tela */
+    bottom: 20px;         /* Distância da parte inferior */
+    right: 20px;          /* Distância da lateral direita */
+    z-index: 1000;        /* Para ficar acima de outros elementos */
+    width: 60px;          /* Tamanho do botão */
+    height: 60px;
+}
+
+.whatsapp-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;   /* Deixa redondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Pequena sombra */
+    transition: transform 0.2s;
+}
+
+.link{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    background-color: #F55257;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.link:active{
+    color:white;
+    background-color: black;
+}
+
+.bloco {
+  display: flex;              /* ativa Flexbox */
+  width: 100%;
+  max-width: 1000px;          /* opcional, deixa o bloco com largura controlada */
+  margin: 50px auto;          /* centraliza o bloco na página */
+  background-color: black;  /* cor de fundo do bloco */
+  border-radius: 10px;        /* cantos arredondados */
+  overflow: hidden;           /* corta excesso de imagem */
+}
+
+.texto {
+    color: white;
+  flex: 1;                    /* ocupa metade do espaço */
+  padding: 40px;
+}
+
+.imagem {
+  flex: 1;                    /* ocupa metade do espaço */
+}
+
+.imagem img {
+  width: 100%;                /* ocupa toda a coluna */
+  height: 100%;               /* mantém altura do bloco */
+  object-fit: cover;          /* ajusta a imagem sem distorcer */
+}
+
+li{
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bloco {
+    flex-direction: column;     /* muda para vertical em telas pequenas */
+  }
+
+  .imagem, .texto {
+    flex: unset;                /* remove o comportamento flex */
+    width: 100%;                /* cada div ocupa 100% da largura */
+  }
+
+  .imagem img {
+    height: 300px;              /* altura fixa para mobile */
+  }
+}
+
+.plataforma {
+  text-align: center;        /* centraliza o título */
+  padding: 50px 20px;        /* espaço acima e abaixo da seção */
+}
+
+.plataforma h2 {
+  margin-bottom: 40px;       /* espaço entre título e imagens */
+  font-size: 2em;             /* tamanho do título */
+}
+
+.cards {
+  display: flex;              /* organiza os cards lado a lado */
+  justify-content: center;    /* centraliza horizontalmente */
+  gap: 40px;                  /* espaço entre os cards */
+  flex-wrap: wrap;            /* permite quebrar em telas pequenas */
+}
+
+.card {
+  text-align: center;         /* centraliza imagem e texto do card */
+  max-width: 200px;           /* largura máxima de cada card */
+}
+
+.card img {
+  width: 100%;                /* imagem ocupa toda a largura do card */
+  height: auto;               /* mantém proporção da imagem */
+  border-radius: 10px;        /* cantos arredondados */
+  margin-bottom: 10px;        /* espaço entre imagem e texto */
+}
+
+.card p {
+  font-size: 1em;             /* tamanho do texto do card */
+  line-height: 1.4;           /* altura da linha */
+}
+
+.final{
+    background-color: #F55257;
+    width: 100%;
+    height: 100px;
+}
+
+
