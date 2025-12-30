@@ -51,10 +51,10 @@ p{
 }
 
 .video {
-  display: flex;
-  flex-direction: column; /* empilha os itens verticalmente */
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .whatsapp-btn {
@@ -167,7 +167,10 @@ li{
 }
 
 @media (max-width: 768px) {
-
+  .logo{
+    background-image: none;
+    background-color: #F55257;
+  }
 
   /* TEXTO */
   p {
@@ -210,6 +213,7 @@ li{
   }
 
 }
+
 
 
 
